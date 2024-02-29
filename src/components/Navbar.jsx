@@ -1,22 +1,22 @@
+import logo from '../assets/allet-logo.png'
+
 const Navbar = () => {
     return (
         <header>
             <div>
-                <nav className="bg-slate-200 p-5 flex">
-                    <div className="nav-logo bg-red-200 rounded-full p-4">
-                      
-                            <h1>Storoom</h1>
+                <nav className="text-2xl p-5 bg-slate-200 shadow flex justify-around items-center">
+                    <div className="nav-logo cursor-pointer">
+                            <img className="h-10" src={logo} alt="Allet" />
+                           
                      
                     </div>
-                    <div className="nav-search ">
-                        <input type="text" placeholder="Search..." />
+                    <div className="nav-search w-auto">
+                        <input className="w-[500px] px-5 py-2 rounded-full" type="text" placeholder="Search..." />
                     </div> 
-                    <div className="nav-login bg-green-500 p-4 rounded-full mr-5" >
-                        <button><h4>Login</h4></button>
+                    <div className="nav-login" >
+                        <button className="mr-5 hover:text-red-400"><h4>Login</h4></button>
+                        <span className='hover:text-red-400'>Cart</span>
                     </div>
-                    <span>Cart</span>
-                    
-                
                 </nav>
             </div>
         </header>
