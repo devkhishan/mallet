@@ -6,7 +6,6 @@
     @apply hidden group-hover:block absolute top-[47%] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer;
 }
 
-.chevronProductRow{
-    @apply absolute top-[47%] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer;
+.chevronMd{
+    @apply  text-2xl rounded-full p-2 m-3 bg-black text-white cursor-pointer;
 }
-
