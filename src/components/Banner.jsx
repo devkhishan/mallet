@@ -2,9 +2,9 @@ import {useState} from 'react'
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
 import {RxDotFilled} from 'react-icons/rx'
 
-import banner1 from '../assets/banners/banner-1.jpg'
-import banner2 from '../assets/banners/banner-2.jpg'
-import banner3 from '../assets/banners/banner-3.jpg'
+import banner1 from '../assets/banners/ban-1.png'
+import banner2 from '../assets/banners/ban-2.png'
+import banner3 from '../assets/banners/ban-3.png'
 
 
 const Banner = () => {
@@ -27,12 +27,14 @@ const Banner = () => {
         <>
         <div className="top-5 relative flex justify-center group">
 
-            <div id="slider" className=' w-[1000px] h-auto relative'>
-                <img src={images[current].url} key={images[current].id} className="rounded-3xl w-full h-[400px] inline-block cursor-pointer  p-2" />
-                <div className='hidden group-hover:block absolute top-[47%]  left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+            <div id="slider" className='relative'>      
+                <div className='chevron left-5'>
                     <BsChevronCompactLeft size={30} onClick={prevSlide}/>
                 </div>
-                <div className='hidden group-hover:block absolute top-[47%]  right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+
+                <img src={images[current].url} key={images[current].id} className="rounded-3xl w-full h-[400px] inline-block cursor-pointer  p-2" />
+
+                <div className='chevron right-5'>
                     <BsChevronCompactRight size={30} onClick={nextSlide}/>
                 </div>
             </div> 
