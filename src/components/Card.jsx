@@ -16,7 +16,8 @@ const Card = (props) => {
                 <span className={`absolute top-0 mt-3 ml-2 cursor-pointer ${isFav?'material-icons text-red-500':'material-symbols-outlined'}`} onClick={() => setIsFav(!isFav)}>favorite</span>
             </div>
         </div>
+        
     )
 }
 
-export default Card;
+export default Card

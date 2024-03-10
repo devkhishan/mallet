@@ -9,3 +9,16 @@
 .chevronMd{
     @apply  text-2xl rounded-full p-2 m-3 bg-black text-white cursor-pointer;
 }
+
+.test{
+    background-image: url('./assets/products/ram.png');
+}
+
+.button{
+    @apply border-4 border-red-500 px-3 rounded-full m-1  font-bold; 
+}
+
+.button:hover{
+    @apply bg-red-500 text-white;
+}
+
