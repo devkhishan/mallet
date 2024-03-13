@@ -1,7 +1,6 @@
 import {getImageURL} from '../utils/imgaeUtils'
 import {useState} from 'react'
 import StarRating from './StarRating'
-import Button from './elements/Button'
 const ProductPageHeader = () => {
 
     const [currentImage, setCurrentImage] = useState(getImageURL('laptop.png')); 
@@ -9,7 +8,7 @@ const ProductPageHeader = () => {
         setCurrentImage(getImageURL(image));
     }
     return (
-        <div className="grid grid-cols-7 ml-[250px] mr-[250px] mb-[50px]">
+        <div className="grid grid-cols-7 ml-[250px] mr-[250px] mb-[50px] mt-[50px]">
 
             <div className="productImage col-span-3 bg-green-400 justify-center items-center"> 
                 
