@@ -1,6 +1,9 @@
 import {getImageURL} from '../utils/imgaeUtils'
 import {useState} from 'react'
-import StarRating from './StarRating'
+import StarRating from './StarRating' 
+import Specification from './Specification' 
+import Reviews from './Reviews'
+
 const ProductPageHeader = () => {
 
     const [currentImage, setCurrentImage] = useState(getImageURL('laptop.png')); 
@@ -27,7 +30,7 @@ const ProductPageHeader = () => {
 
             <div className="col-span-4  bg-green-400 p-5 overflow overflow-y-auto">
 
-                <div className="productBrief h-[700px] bg-white p-5 overflow overflow-y-auto">
+                <div className="productBrief h-[690px] bg-white p-5 overflow overflow-y-auto">
                     <h1 className='text-4xl font-bold'>Apple Watch Series 6</h1>
                     <div className="sellerDetails flex my-2">
                         <h3 className=''>Sold by <span className='font-bold'>Apple</span></h3> 
@@ -76,50 +79,15 @@ const ProductPageHeader = () => {
                     
 
                     
-                    <div className="pl-2 address my-2">
+                    <div className="pl-2 address mb-[20px]">
                         <h2>Delivery to <span className='font-bold underline'>Chennai - 600039.</span></h2>
-                    </div>
-                    
-                    <div className="bg-blue-300 p-5">
-                        <div className="content">
-                            <h1 className="text-3xl font-bold bg-orange-500 p-3">
-                                <span className="bg-white block p-3 pl-7">Specification</span>
-                            </h1>
-                        
+                    </div> 
 
-                            <div className="specs p-3 bg-green-500 h-[350px]">
-                                <table className="border-separate border-4 h-full w-full bg-white  border-spacing-5 border-red-500">
-                                    
-                                    <tr>
-                                        <td className="border-2 rounded border-slate-500 text-center text-slate-600">Model</td>
-                                        <td className="font-bold bg-slate-200 border-2 border-black pl-5 rounded">Apple iPhone 12 Pro Max</td>
-                                    </tr>
-                                    <tr >
-                                        <td className="border-2 rounded border-slate-500 text-center text-slate-600">Color</td>
-                                        <td className="font-bold bg-slate-200 border-2 border-black pl-5 rounded">Graphite, Silver, Gold, Pacific Blue</td>
-                                    </tr>
-                                    <tr >
-                                        <td className="border-2 rounded border-slate-500 text-center text-slate-600">Display</td>
-                                        <td className="font-bold bg-slate-200 border-2 border-black pl-5 rounded">6.7 inches, 1284 x 2778 pixels</td>
-                                    </tr>
-                                    <tr >
-                                        <td className="border-2 rounded border-slate-500 text-center text-slate-600">Processor</td>
-                                        <td className="font-bold bg-slate-200 border-2 border-black pl-5 rounded">Apple A14 Bionic</td>
-                                    </tr>
-                                    <tr >
-                                        <td className="border-2 rounded border-slate-500 text-center text-slate-600">RAM</td>
-                                        <td className="font-bold bg-slate-200 border-2 border-black pl-5 rounded">6GB</td>
-                                    </tr>
-                                    <tr >
-                                        <td className="border-2 rounded border-slate-500 text-center text-slate-600">Storage</td>
-                                        <td className="font-bold bg-slate-200 border-2 border-black pl-5 rounded">128GB, 256GB, 512GB</td>
-                                    </tr>
-                                    
-                                </table>
-                            </div>
-                        </div>
-                        
-                    </div>
+                    <div className="border my-[10px] mx-[50px] rounded-full border-red-500"></div>
+                    <Specification />
+                    <div className="border my-[10px] mx-[50px] rounded-full border-red-500"></div>
+                    <Reviews />
+
                     
 
 

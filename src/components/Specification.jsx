@@ -1,37 +1,11 @@
-import chargerImg from '../assets/products/charger.png';
-
 const Specification = () => {
     return (
-        <div className="mx-[250px] grid grid-cols-2">
-            <div className="details bg-blue-500">
-                <div className=" p-5">
-                    <h1 className="text-3xl font-bold bg-orange-500 p-3">
-                        <span className="bg-white block p-3 pl-7">Product Details</span>
-                    </h1>
-
-                    <div className="bg-green-500 p-3 h-[350px]">
-                        <div className="product-description p-3 h-full grid grid-cols-2 bg-white">
-                            <img src={chargerImg}  />
-                            <p className='bg-slate-700 text-white rounded p-4'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eos eius ea. Nobis, distinctio. Qui maiores assumenda reprehenderit fugiat quidem praesentium earum facilis quia magni, commodi eaque, eius mollitia exercitationem? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, quos. Quisquam, quos. Lorem ipsum dolor.
-                            </p>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-
-                
-            </div>
-            <div className="bg-blue-300 p-5">
+        
+            <div className="">
                 <div className="content">
-                    <h1 className="text-3xl font-bold bg-orange-500 p-3">
-                        <span className="bg-white block p-3 pl-7">Specification</span>
-                    </h1>
-                
 
-                    <div className="specs p-3 bg-green-500 h-[350px]">
-                        <table className="border-separate border-4 h-full w-full bg-white  border-spacing-5 border-red-500">
+                    <div className="specs h-[350px]">
+                        <table className="border-separate border-4 h-full w-full   border-spacing-5 border-none">
                             
                             <tr>
                                 <td className="border-2 rounded border-slate-500 text-center text-slate-600">Model</td>
@@ -63,7 +37,7 @@ const Specification = () => {
                 </div>
                 
             </div>
-        </div>
+     
     )
 }
 
