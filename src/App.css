@@ -22,3 +22,6 @@
     @apply bg-red-500 text-white;
 }
 
+.formRow{
+    @apply block my-2;
+}
