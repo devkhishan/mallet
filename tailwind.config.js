@@ -5,11 +5,20 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  
+
   theme: {
     extend: {},
+    container: {
+      center: true,
+    },
   },
   plugins: [
-    require('tailwind-scrollbar-hide')
+    require('tailwind-scrollbar-hide'),
+    require("daisyui")
   ],
+  
+
+
 }
 

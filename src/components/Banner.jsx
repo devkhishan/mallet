@@ -24,6 +24,7 @@ const Banner = () => {
         setCurrent(current == images.length-1? 0: current+1); 
     }
     return (
+       
         <>
         <div className="top-5 relative flex justify-center group">
 

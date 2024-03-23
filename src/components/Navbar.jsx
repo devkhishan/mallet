@@ -1,27 +1,51 @@
 import logo from '../assets/allet-logo.png'
-import Button from './elements/Button'
-
-const Navbar = () => {
+import Cart from './Cart'
+import {useState} from 'react'
+const Navbar = () => { 
+    const [cartOpen, setCartOpen] = useState(false)
+    
     return (
-        <header>
-            <div>
-                <nav>
-                    <div className="nav-container text-2xl p-5 bg-slate-20 shadow flex justify-around items-center">
-                        <div>
-                            <div className="nav-logo cursor-pointer"></div>
-                                <img className="h-10" src={logo} alt="Allet" />
+       <div className="bg-white">
+            <div className="navbar container mx-auto flex justify-between bg-white">
+                <div className="border-4 rounded-xl  border-black">
+                    <img src={logo} className='w-[150px] h-auto  p-2 ' alt="" />
+                </div>
+                <div className="flex-none">
+                    <details className="dropdown dropdown-end" open={cartOpen}>
+                    
+                        <summary tabIndex={0} role="button" className="btn btn-ghost btn-circle" >
+                            <div className="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            <span className="badge badge-sm indicator-item">3</span>s 
+
+                            </div>
+                        </summary>
+                       
+                        <div tabIndex={0} className="">
+                            <Cart cartOpen={cartOpen} setCartOpen={setCartOpen}/>
                         </div>
-                        <div className="nav-search w-auto border-2 border-black rounded-full">
-                            <input className="w-[500px] px-5 py-2 rounded-full" type="text" placeholder="Search..." />
-                        </div> 
-                        <div className="nav-login" >
-                            <Button text='Login' />
-                            <span className='material-icons button py-1 '>shopping_cart</span>
+                    </details>
+                    <div className="dropdown dropdown-end">
+                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                        <div className="w-10 rounded-full">
+                        <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                         </div>
                     </div>
-                </nav>
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li>
+                        <a className="justify-between">
+                            Profile
+                            <span className="badge">New</span>
+                        </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                    </ul>
+                    </div>
+                </div>
             </div>
-        </header>
+        </div>
+      
     )
 }
 

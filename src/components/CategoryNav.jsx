@@ -2,37 +2,44 @@
 
 const CategoryNav = () => {
     return (
-        <>
-            <nav className='px-[100px] bg-orange-300'>
-                <ul className='flex py-5 bg-orange-200 justify-around text-lg'>
-                    <li className='bg-blue-200 rounded-full px-5 py-2 pointer-cursor shadow hover:scale-110 duration-200'>
+         
+            <nav className='my-[10px]'>
+                <ul className='flex container lg:px-[50px] rounded-md py-2 bg-stone-900 justify-evenly text-lg'>
+                    <li className='text-white   pointer-cursor shadow hover:scale-110 duration-200'>
                         <a href="/">
                             Home
                         </a> 
                     </li>
-                    <li className='bg-blue-200 rounded-full px-5 py-2 pointer-cursor shadow hover:scale-110 duration-200'>
+                    <li className='text-white   pointer-cursor shadow hover:scale-110 duration-200'>
                         <a href="/">
-                            Mobiles
+                            Smartphones
                         </a> 
                     </li>
-                    <li className='bg-blue-200 rounded-full px-5 py-2 pointer-cursor shadow hover:scale-110 duration-200'>
-                        <a href="/">
-                            Laptops
-                        </a> 
-                    </li>
-                    <li className='bg-blue-200 rounded-full px-5 py-2 pointer-cursor shadow hover:scale-110 duration-200'>
+                    <li className='text-white   pointer-cursor shadow hover:scale-110 duration-200'>
                         <a href="/">
                             Accessories
                         </a> 
                     </li>
-                    <li className='bg-blue-200 rounded-full px-5 py-2 pointer-cursor shadow hover:scale-110 duration-200'>
+                    <li className='text-white   pointer-cursor shadow hover:scale-110 duration-200'>
                         <a href="/">
-                            Wallets
+                            Wearables
                         </a> 
                     </li>
+                   
+                    <li className='text-white   pointer-cursor shadow hover:scale-110 duration-200'>
+                        <a href="/">
+                            Cameras
+                        </a> 
+                    </li>
+                    <li className='text-white   pointer-cursor shadow hover:scale-110 duration-200'>
+                        <a href="/">
+                            Audio
+                        </a> 
+                    </li>
+                   
                 </ul>
             </nav>
-        </>
+
     )
 }
 
