@@ -7,7 +7,7 @@ import AddProduct from './components/AddProduct'
 
 function App() {
   return (
-    <div className='bg-slate-300'>
+    <div className='bg-slate-200'>
       <BrowserRouter>
         <Navbar />
         <div className="pages">

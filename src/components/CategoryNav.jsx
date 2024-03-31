@@ -4,7 +4,7 @@ const CategoryNav = () => {
     return (
          
             <nav className='my-[10px]'>
-                <ul className='flex container lg:px-[50px] rounded-md py-2 bg-stone-900 justify-evenly text-lg'>
+                <ul className='flex container px-[50px] rounded-md py-3 bg-slate-900 justify-evenly text-lg'>
                     <li className='text-white   pointer-cursor shadow hover:scale-110 duration-200'>
                         <a href="/">
                             Home

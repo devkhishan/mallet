@@ -14,11 +14,11 @@ const ProductRow = (props) => {
     }
     const products = getProducts();
     return (
-        <div className='mb-10'>
-            <div className="ml-[130px] mr-[130px] p-5 pl-[50px] mb-3 rounded-full  bg-red-600 text-white text-2xl font-bold block">
+        <div className='mb-10 container bg-slate-900 rounded-lg space-y-3 pt-9 pb-6'>
+            <div className="inline p-3 bg-white justify-evenly text-lg rounded-xl shadow shadow-lg mx-[64px] font-bold">
                 {`${props.title}`}
             </div>
-            <div  className='relative flex items-center pb-3 ml-[60px] mr-[60px] '>
+            <div  className='relative flex items-center  '>
                 
                 <MdChevronLeft className="chevronMd" size={40} onClick={() => scroll(-600)}/>
             

@@ -45,7 +45,7 @@ export function Cart({cartOpen, setCartOpen}) {
   }
   return (
     <div
-      className=" mt-3 z-[1] card card-compact dropdown-content  bg-base-100 m-auto my-6 w-screen max-w-sm rounded-lg border border-gray-200 p-4 pt-4 shadow-sm sm:p-6 lg:p-8"
+      className=" mt-3 z-[1] card card-compact dropdown-content bg-white m-auto my-6 w-screen max-w-sm rounded-lg border border-gray-200 p-4 pt-4 shadow-sm sm:p-6 lg:p-8"
       aria-modal="true"
       role="dialog"
       tabIndex={-1}
@@ -90,6 +90,7 @@ export function Cart({cartOpen, setCartOpen}) {
           >
             Checkout
           </button>
+       
           <a
             href="#"
             className="inline-block text-sm text-gray-600 transition hover:text-gray-700 hover:underline hover:underline-offset-4"

@@ -13,6 +13,7 @@ const AddProduct = () => {
                 <div className="input flex items-center gap-2 border-slate-400 ">
                     <input type="text" className="grow " placeholder="Product Title" />
                 </div>
+                
                 <textarea className="textarea w-full border-slate-400  textarea-bordered h-[200px]" placeholder="Product Description"></textarea>
                
                 <div className="prodImg space-y-4">
@@ -22,6 +23,7 @@ const AddProduct = () => {
                 <div className="input flex items-center gap-2 max-w-xs border-slate-400 ">
                     <input type="text" className="grow" placeholder="Seller Name" />
                 </div>
+                
                 <div className="input flex items-center gap-2 max-w-xs border-slate-400 ">
                     <input type="number" className="grow " placeholder="Available Quantity" min="0" />
                 </div>
