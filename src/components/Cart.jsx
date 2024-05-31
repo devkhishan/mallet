@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 
 
 const products = [
@@ -39,10 +40,11 @@ const products = [
   },
 ]
 
-export function Cart({cartOpen, setCartOpen}) { 
+export  function Cart({cartOpen, setCartOpen}) { 
   const handleClose = () => {
     setCartOpen(!cartOpen);
   }
+  const produc=useSelector((state)=>state.userReducer.cart);// To be changed Just a check
   return (
     <div
       className=" mt-3 z-[1] card card-compact dropdown-content bg-white m-auto my-6 w-screen max-w-sm rounded-lg border border-gray-200 p-4 pt-4 shadow-sm sm:p-6 lg:p-8"
